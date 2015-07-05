@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<title>拖拽3D</title>
+	<style>
+	*{margin:0;padding:0;}
+	.box{position:absolute;left:50%;top:50%;width:16rem;height:16rem;margin:-8rem 0 0 -8rem;background-image:url(images/0.png);background-repeat:no-repeat;background-size:100%;}
+	.img-onload{visibility:hidden;}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="img-onload"></div>
+
+	<script src="js/zepto.min.js" type="text/javascript"></script>
+	<script src="js/drag3d.js" type="text/javascript"></script>
+	<script>
+		document.documentElement.style.fontSize = document.documentElement.clientWidth/16 + 'px';
+		$(function (){
+			$(".box").drag3d();
+		})
+	</script>
+</body>
+</html>
