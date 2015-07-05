@@ -6,7 +6,7 @@
 ```js
     $(element).drag3d({
         amount:8,	                // 数量
-    		imgUrl:"images",          // 图片存放的路径
-    		suffix:"png"              // 图片后缀名
+        imgUrl:"images",          // 图片存放的路径
+        suffix:"png"              // 图片后缀名
     });
 ```
